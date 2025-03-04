@@ -17,9 +17,9 @@ func _ready() -> void:
 ```
 
 ## Versioning
-This repository will be updated regularly to work with the latest beta release of the master (4.0) branch. If you can't compile the extension, please open an issue.
+This repository will be updated regularly to work with the latest beta release of the master (4.4) branch. If you can't compile the extension, please open an issue.
 
-----> **Most Recent Update: Godot 4 Beta 10 working**
+----> **Most Recent Update: Godot 4.4 working**
 
 ## Contributing
 If you can't compile the extension, please open an issue with the error log in your terminal and/or the error log in the editor (if you can't run the example scene).
@@ -70,4 +70,8 @@ cd ..
 scons target=template_debug
 # OR simpler (the above is the default configuration):
 scons
+```
+8. Documentation
+```bash
+godot --doctool .. --gdextensios-docs
 ```

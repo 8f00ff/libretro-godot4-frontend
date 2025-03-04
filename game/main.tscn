@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://biu372d1aoqwy"]
 
-[ext_resource type="Script" path="res://main.gd" id="1_swau4"]
+[ext_resource type="Script" uid="uid://brq5p78ecetad" path="res://main.gd" id="1_swau4"]
 [ext_resource type="Texture2D" uid="uid://cx1mscuegq1lo" path="res://icon.png" id="2_uh3hw"]
 
 [sub_resource type="ImageTexture" id="ImageTexture_af8hy"]
@@ -20,8 +20,8 @@ ok_button_text = "Open"
 mode_overrides_title = false
 file_mode = 0
 access = 2
-root_subfolder = "/usr/lib/libretro"
-filters = PackedStringArray("*_libretro.so*")
+root_subfolder = "/Users/cex/Downloads"
+filters = PackedStringArray("*_libretro.*")
 
 [node name="file_dialog_game" type="FileDialog" parent="."]
 title = "Load Game"
@@ -130,6 +130,10 @@ size = Vector2i(160, 144)
 [node name="sprite_2d" type="Sprite2D" parent="2d"]
 position = Vector2(400, 300)
 texture = SubResource("ImageTexture_af8hy")
+
+[node name="TextEdit" type="TextEdit" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
 
 [connection signal="file_selected" from="file_dialog_core" to="." method="_on_file_dialog_core_file_selected"]
 [connection signal="file_selected" from="file_dialog_game" to="." method="_on_file_dialog_game_file_selected"]
